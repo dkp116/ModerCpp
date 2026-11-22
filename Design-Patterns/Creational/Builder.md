@@ -63,6 +63,7 @@ public:
 
 int main() {
     CarBuilder builder;
+    //could have BoatBuilder and from here we can change the makeSportsCar to makeSports and have the same implementation 
 
     Director director;
     director.makeSportsCar(builder);
