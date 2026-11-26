@@ -44,8 +44,8 @@ public:
         car.speed = 100;
     }
 
-    void setHorsePower(int hp) override {
-        car.horsePower = hp;
+    void setHorsePower() override {
+        car.horsePower = 1000;
     }
 
     Car getResult() override {
@@ -57,7 +57,7 @@ class Director {
 public:
     void makeSportsCar(IBuilder& builder) {
         builder.addTurbo();
-        builder.setHorsePower(1000);
+        builder.setHorsePower();
     }
 };
 
